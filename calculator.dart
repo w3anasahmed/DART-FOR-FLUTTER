@@ -57,32 +57,56 @@ void main() {
   print("Enter your Starting Number: ");
     int startEv_No;
     startEv_No = int.parse(stdin.readLineSync()!);
+    int count_Ev = (startEv_No/2).round();
   print("Enter your Ending Number: ");
     int endEv_No;
     endEv_No = int.parse(stdin.readLineSync()!);
   print("""if your want to print all even number enter: 1
-  if you want to count the even number enter: 2
-  if you want to print both enter: 0""");
+if you want to count the even number enter: 2
+if you want to print both enter: 0""");
   int answer;
     answer = int.parse(stdin.readLineSync()!);
-//   int startEv_No =50;
-//   int endEv_No = 100;
-  print((startEv_No/2).runtimeType);
-  print(startEv_No.runtimeType);
-  print(2/2);
- 
-  while(startEv_No <= endEv_No){
-    if(startEv_No == 0){
-      startEv_No + 2;
-      print("hi");
-     }else if(((startEv_No/2).runtimeType) == double){
-      startEv_No+=1;
-      print(startEv_No);
-      startEv_No+=2;
-    }else{
-      print(startEv_No);
-      startEv_No += 2;}
-  }
+    switch(answer){
+      case 1:{
+      while(startEv_No <= endEv_No){
+        if(startEv_No == 0){
+          startEv_No + 2;
+          print("hi");
+         }else if(startEv_No%2 != 0){
+          startEv_No+=1;
+          print(startEv_No);
+          startEv_No+=2;
+        }else{
+          print(startEv_No);
+          startEv_No += 2;}
+      }
+          
+      }
+      break;
+      case 2:{
+          print(count_Ev);
+      }
+      case 0:{
+      while(startEv_No <= endEv_No){
+        if(startEv_No == 0){
+          startEv_No + 2;
+          print("hi");
+         }else if(startEv_No%2 != 0){
+          startEv_No+=1;
+          print(startEv_No);
+          startEv_No+=2;
+        }else{
+          print(startEv_No);
+          startEv_No += 2;}
+      }
+       print("count is $count_Ev ");
+      }
+      default:{
+          print("Try Again");
+      }
+      break;
+        
+ }
    }
       
   }
