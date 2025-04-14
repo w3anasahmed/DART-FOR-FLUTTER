@@ -52,16 +52,16 @@ void main() {
       }
    case 2:{
   print("You are now in the Even Number Printer & Counter");
-  print("Enter your Starting Number: ");
+  print("Enter the Starting Number: ");
     int startEv_No;
     startEv_No = int.parse(stdin.readLineSync()!);
     int count_Ev = (startEv_No/2).round();
-  print("Enter your Ending Number: ");
+  print("Enter the Ending Number: ");
     int endEv_No;
     endEv_No = int.parse(stdin.readLineSync()!);
-  print("""if your want to print all even number enter: 1
-if you want to count the even number enter: 2
-if you want to print both enter: 0""");
+  print("""if your want to print all even numbers, enter: 1
+if you want to count the even numbers, enter: 2
+If you want to do both, enter: 0""");
   int answer;
     answer = int.parse(stdin.readLineSync()!);
     switch(answer){
