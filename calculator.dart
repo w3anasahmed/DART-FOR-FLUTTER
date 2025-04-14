@@ -37,6 +37,19 @@ void main() {
           int sum_Marks = math_No+eng_No+sci_No+isl_No+pst_No+cs_No;
           num per_Marks = (sum_Marks/600)*100;
           print("your Percentage is: $per_Marks");
+          if(per_Marks<=100&&per_Marks>=80){
+              print("Your Grade is A");
+          }else if(per_Marks<80&&per_Marks>=60){
+              print("Your Grade is B");
+          }else if(per_Marks<60&&per_Marks>=50){
+              print("Your Grade is C");
+          }else if(per_Marks<50&&per_Marks>=40){
+              print("Your Grade is D");
+          }else if(per_Marks>=0&&per_Marks<40){
+              print("Your Grade is C");
+          }else{
+              print("Percentage is Wrong");
+          }
           
       }
       
