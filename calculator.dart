@@ -107,8 +107,9 @@ If you want to do both, enter: 0""");
  }
 }
     case 3:{
-     print("Enter the Number: ");
-      int? no = int.parse(stdin.readLineSync()!);
+        print("Enter the Number");
+        int no;
+        no = int.parse(stdin.readLineSync()!);
    int store = 1;
    while(no != 0){
      store = store * no;
