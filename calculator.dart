@@ -105,8 +105,10 @@ If you want to do both, enter: 0""");
       break;
         
  }
+}
     case 3:{
-      int no = 5;
+     print("Enter the Number: ");
+      int? no = int.parse(stdin.readLineSync()!);
    int store = 1;
    while(no != 0){
      store = store * no;
@@ -114,13 +116,6 @@ If you want to do both, enter: 0""");
    }
    print(store);
     }
-
-
-
-
-
-    
-   }
       
   }
 }
