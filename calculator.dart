@@ -105,6 +105,21 @@ If you want to do both, enter: 0""");
       break;
         
  }
+    case 3:{
+      int no = 5;
+   int store = 1;
+   while(no != 0){
+     store = store * no;
+     no --;
+   }
+   print(store);
+    }
+
+
+
+
+
+    
    }
       
   }
