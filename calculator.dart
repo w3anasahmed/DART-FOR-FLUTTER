@@ -117,6 +117,29 @@ If you want to do both, enter: 0""");
    }
    print(store);
     }
+
+   case 4:{
+    
+  double first_No;
+  double second_No;
+  print("Enter First Value: ");
+  first_No = double.parse(stdin.readLineSync()!);
+    print("Enter Second Value: ");
+  second_No = double.parse(stdin.readLineSync()!);
+  print("Enter Operator: ");
+  String? ope  = stdin.readLineSync();
+    switch(ope){
+        case "+": {print(first_No + second_No);}
+        break;
+        case "-": {print(first_No = second_No);}
+        break;
+        case "*": {print(first_No * second_No);}
+        break;
+        case "/": {print(first_No / second_No);}
+        default: {print("wrong OPerator");}
+        break;
+    
+   }
       
   }
 }
