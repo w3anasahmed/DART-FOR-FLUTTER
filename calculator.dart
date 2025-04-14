@@ -5,9 +5,7 @@ void main() {
 1. Percentage Calculator and Grade Finder.
 2. Even Number Printer & Counter.  
 3. Factorial Calculator.  
-4. Leap Year Finder (From [x] to [y]).  
-5. Arithmetic Operations Calculator.  
-6. Length Unit Converter.
+4. Arithmetic Operations Calculator.  
  """);
   print("Enter the S.No to Perform the calculation");
   int? s_No = int.parse(stdin.readLineSync()!);
