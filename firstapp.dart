@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 
 void main(){
   runApp(const MaterialApp(
-  home: Center(
+  home: Scaffold(
+    body: Center(
     child: Text('hello world')
   ),//center
+  )//Scaffold
   ));//materialapp
 }
